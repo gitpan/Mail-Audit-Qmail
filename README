@@ -1,0 +1,24 @@
+NAME
+    Mail::Audit::Qmail - Mail::Audit plugin to resend using qmail-inject
+
+SYNOPSIS
+        use Mail::Audit qw(Qmail);
+            my $mail = Mail::Audit->new;
+        ...
+            $mail->qmail_resend($to);
+
+DESCRIPTION
+    Resends the message using qmail-inject. Preserves the envelope sender.
+
+    Dies if anything goes wrong, so you might want to wrap it in an eval.
+
+  METHODS
+    qmail_resend([$to])
+        well, duh.
+
+AUTHOR
+        Ask Bjoern Hansen <ask@develooper.com>
+
+SEE ALSO
+        Mail::Audit
+
